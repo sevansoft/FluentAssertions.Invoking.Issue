@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{28731165-68D9-4E44-AB35-8CF5702B2F1F}"
+ProjectSection(SolutionItems) = preProject
+	nuget.config = nuget.config
+	.gitignore = .gitignore
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B8AD9B4E-45A8-4565-932A-C6661DAB05D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertion.Issue", "src\FluentAssertion.Issue\FluentAssertion.Issue.csproj", "{B63688B0-8F69-4FEF-8061-54268194BCD2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.10.3", "5.10.3", "{51575FC6-570F-48BF-9A2F-477E9F711D30}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.0.0", "6.0.0", "{AD586E73-C83E-406F-8565-FB7AE3905050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertion.Issue.5.10.3", "tests\FluentAssertion.Issue.5.10.3\FluentAssertion.Issue.5.10.3.csproj", "{5DF95F20-899F-4126-89A0-5E730652489D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FluentAssertion.Issue.6.0.0", "tests\FluentAssertion.Issue.6.0.0\FluentAssertion.Issue.6.0.0.csproj", "{C6CEDA1C-D572-4D83-8390-B61B5DD711E6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{7B4D96AC-17EE-484A-AD71-9E69E04133B3}"
+ProjectSection(SolutionItems) = preProject
+	.github\dependabot.yml = .github\dependabot.yml
+EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B63688B0-8F69-4FEF-8061-54268194BCD2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B63688B0-8F69-4FEF-8061-54268194BCD2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B63688B0-8F69-4FEF-8061-54268194BCD2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B63688B0-8F69-4FEF-8061-54268194BCD2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DF95F20-899F-4126-89A0-5E730652489D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DF95F20-899F-4126-89A0-5E730652489D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DF95F20-899F-4126-89A0-5E730652489D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DF95F20-899F-4126-89A0-5E730652489D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6CEDA1C-D572-4D83-8390-B61B5DD711E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6CEDA1C-D572-4D83-8390-B61B5DD711E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6CEDA1C-D572-4D83-8390-B61B5DD711E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6CEDA1C-D572-4D83-8390-B61B5DD711E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B63688B0-8F69-4FEF-8061-54268194BCD2} = {28731165-68D9-4E44-AB35-8CF5702B2F1F}
+		{51575FC6-570F-48BF-9A2F-477E9F711D30} = {B8AD9B4E-45A8-4565-932A-C6661DAB05D7}
+		{AD586E73-C83E-406F-8565-FB7AE3905050} = {B8AD9B4E-45A8-4565-932A-C6661DAB05D7}
+		{5DF95F20-899F-4126-89A0-5E730652489D} = {51575FC6-570F-48BF-9A2F-477E9F711D30}
+		{C6CEDA1C-D572-4D83-8390-B61B5DD711E6} = {AD586E73-C83E-406F-8565-FB7AE3905050}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {12C474AB-8C14-467E-B240-79F36CD30A27}
+	EndGlobalSection
+EndGlobal
