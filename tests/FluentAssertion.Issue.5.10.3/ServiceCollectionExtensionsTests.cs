@@ -8,7 +8,7 @@ namespace FluentAssertion.Issue._5._10._3
     public class ServiceCollectionExtensionsTests
     {
         [Fact]
-        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null()
+        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null_Previous()
         {
             // arrange
             IServiceCollection serviceCollection = null;
@@ -21,9 +21,9 @@ namespace FluentAssertion.Issue._5._10._3
                 .Throw<ArgumentNullException>()
                 .WithMessage("Value cannot be null. (Parameter 'serviceCollection')");
         }
-        
+
         [Fact]
-        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null_V2()
+        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null_Now()
         {
             // arrange
             IServiceCollection serviceCollection = null;
@@ -31,7 +31,7 @@ namespace FluentAssertion.Issue._5._10._3
             // act
             // ReSharper disable once ExpressionIsAlwaysNull
             Action method = () => serviceCollection.Register();
-            
+
             // assert
             method
                 .Should()

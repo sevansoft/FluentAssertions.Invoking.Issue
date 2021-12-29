@@ -14,12 +14,7 @@ namespace FluentAssertion.Issue._6._0._0
             EnumHelper
                 .GetEnum()
                 .Should()
-                .BeEquivalentTo(TestEnum.FirstValue);
-
-            //EnumHelper
-            //    .GetEnum()
-            //    .Should()
-            //    .Be(TestEnum.FirstValue);
+                .Be(TestEnum.FirstValue);
         }
     }
 }

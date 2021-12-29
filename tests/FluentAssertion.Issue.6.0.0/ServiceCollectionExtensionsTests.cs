@@ -7,8 +7,8 @@ namespace FluentAssertion.Issue._6._0._0
 {
     public class ServiceCollectionExtensionsTests
     {
-        [Fact]
-        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null()
+        [Fact(Skip = "Test fails on <6.0.0")]
+        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null_Previous()
         {
             // arrange
             IServiceCollection serviceCollection = null;
@@ -19,11 +19,11 @@ namespace FluentAssertion.Issue._6._0._0
             serviceCollection.Invoking(sut => sut.Register())
                 .Should()
                 .Throw<ArgumentNullException>()
-                .WithMessage("Value cannot be null. (Parameter 'serviceCollection')");
+                .WithMessage("Value cannot be null. (Parameter 'subject')"); //wrong parameter, relates to sut being null
         }
-        
+
         [Fact]
-        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null_V2()
+        public void ExtensionMethod_Should_Throw_ArgumentNullException_When_ServiceCollection_Is_Null_Now()
         {
             // arrange
             IServiceCollection serviceCollection = null;
@@ -31,7 +31,7 @@ namespace FluentAssertion.Issue._6._0._0
             // act
             // ReSharper disable once ExpressionIsAlwaysNull
             Action method = () => serviceCollection.Register();
-            
+
             // assert
             method
                 .Should()
