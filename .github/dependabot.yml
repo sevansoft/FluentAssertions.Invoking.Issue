@@ -12,3 +12,9 @@ updates:
     assignees:
       - sevansoft
 
+  - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/tests/FluentAssertion.Issue.5.10.3" # Location of package manifests
+    schedule:
+      interval: "daily"
+    open-pull-requests-limit: 0
+
