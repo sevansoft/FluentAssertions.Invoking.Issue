@@ -1,5 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
 using System;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FluentAssertion.Issue
 {
@@ -7,8 +7,7 @@ namespace FluentAssertion.Issue
     {
         public static IServiceCollection Register(this IServiceCollection serviceCollection)
         {
-            _ = serviceCollection ?? throw new ArgumentNullException(nameof(serviceCollection));
-            return serviceCollection;
+            return serviceCollection ?? throw new ArgumentNullException(nameof(serviceCollection));
         }
     }
 }
