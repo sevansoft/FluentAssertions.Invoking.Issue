@@ -1,6 +1,6 @@
+using System;
 using FluentAssertions;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 using Xunit;
 
 namespace FluentAssertion.Issue._6._0._0
