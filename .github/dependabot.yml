@@ -16,7 +16,10 @@ updates:
     directory: "/tests/FluentAssertion.Issue.5.10.3" # Location of package manifests
     schedule:
       interval: "daily"
-    open-pull-requests-limit: 0
+    assignees:
+      - sevansoft
+    ignore:
+      - dependency-name: "FluentAssertions"
 
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/tests/FluentAssertion.Issue.6.0.0" # Location of package manifests
