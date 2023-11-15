@@ -11,6 +11,8 @@ updates:
       interval: "daily"
     assignees:
       - sevansoft
+    ignore:
+      - dependency-name: "FluentAssertions" # would attempt to collect FluentAssertions for FluentAssertion.Issue.5.10.3 which we want to keep pinned
   
   - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/src/FluentAssertion.Issue" # Location of package manifests
