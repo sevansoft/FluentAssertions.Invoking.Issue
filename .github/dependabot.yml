@@ -6,6 +6,13 @@
 version: 2
 updates:
   - package-ecosystem: "nuget" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"
+    assignees:
+      - sevansoft
+  
+  - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/src/FluentAssertion.Issue" # Location of package manifests
     schedule:
       interval: "daily"
