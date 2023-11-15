@@ -1,9 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>FluentAssertion.Issue._6._0._0</RootNamespace>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 

@@ -1,15 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>FluentAssertion.Issue._5._10._3</RootNamespace>
-
     <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="FluentAssertions" Version="5.10.3" />
-
   </ItemGroup>
 
   <ItemGroup>
